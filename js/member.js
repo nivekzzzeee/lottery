@@ -61,3 +61,9 @@ var member=[
 {"phone":"幸运数字","name":"苦荷"},
 {"phone":"幸运数字","name":"狼桃"}
 ]
+let index = 1; // 从18开始
+for (let i = 2; i < member.length; i++) { // 假设从第2个元素开始修改
+  member[i].name = (18 + i - 2).toString();
+}
+
+console.log(member);
